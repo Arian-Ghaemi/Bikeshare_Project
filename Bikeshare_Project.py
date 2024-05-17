@@ -115,8 +115,9 @@ df = pd.DataFrame(inputs2, columns=col_names)
 
 prediction = rf.predict(df)
 prediction = np.round(prediction)
-st.markdown(f"<div style='font-size: 50px; text-align: center;'>{"the amount of users of this day:"} {prediction}</div>", unsafe_allow_html=True)
 
+text = "the amount of users of this day:"
+st.markdown(f"<div style='font-size: 50px; text-align: center;'>{text} {prediction}</div>", unsafe_allow_html=True)
 
 
 # Inject custom CSS styles targeting a specific text input field
