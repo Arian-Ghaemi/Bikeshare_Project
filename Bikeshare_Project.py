@@ -55,6 +55,7 @@ inputs = []
 def cnt_predict(date, workingday, weathersit, temp):
     
     if date is not None:
+        yr = date.year - 2011
         if yr > 0:
             yr = yr
         else: yr=1
