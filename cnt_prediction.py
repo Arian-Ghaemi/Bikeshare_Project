@@ -25,6 +25,8 @@ daily_data = daily_data.drop("instant",axis=1)
 daily_data = daily_data.drop("atemp",axis=1)
 daily_data = daily_data.drop("holiday",axis=1)
 daily_data = daily_data.drop("weekday",axis=1)
+daily_data = daily_data.drop("windspeed",axis=1)
+daily_data = daily_data.drop("hum",axis=1)
 
 daily_data = daily_data.sort_values(by=['yr','month','day'])
 
